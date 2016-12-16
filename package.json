@@ -1,0 +1,53 @@
+{
+  "name": "ng2-js-data",
+  "version": "1.0.0",
+  "description": "An abstraction over the js-data library for angular 2 applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ng serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musienkoyuriy/ng2-js-data.git"
+  },
+  "keywords": [
+    "angular2",
+    "ng2",
+    "js-data",
+    "observables",
+    "rx",
+    "mapper",
+    "schema"
+  ],
+  "author": "Yuriy Musienko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/musienkoyuriy/ng2-js-data/issues"
+  },
+  "homepage": "https://github.com/musienkoyuriy/ng2-js-data#readme",
+  "devDependencies": {
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/compiler-cli": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/forms": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "@angular/platform-server": "^2.0.0",
+    "@angular/router": "^3.0.0",
+    "@angular/tsc-wrapped": "0.4.0",
+    "angular-cli": "1.0.0-beta.22-1",
+    "core-js": "2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs-builder": "0.15.34",
+    "ts-helpers": "1.1.2",
+    "typescript": "2.0.10",
+    "@types/webpack": "2.0.0"
+  },
+  "dependencies": {
+    "js-data": "rc",
+    "js-data-http": "rc",
+    "zone.js": "^0.7.2"
+  }
+}
