@@ -1,4 +1,10 @@
 node_modules/
-.idea/
+
+.idea/modules.xml
+.idea/ng2-js-data.iml
+.idea/typescript-compiler.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
 npm-debug.log
 yarn.lock
