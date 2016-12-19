@@ -1,9 +1,7 @@
 import { IPost, store } from './store';
 
 export const createPost = (data): Promise<IPost> => {
-  return store.create('post', data).then((post) => {
-      console.log(post)
-  });
+  return store.create('post', data);
 };
 
 export const fetchPosts = (): Promise<IPost> => {
