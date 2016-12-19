@@ -4,9 +4,9 @@ export const postSchema = {
   post: new Schema({
     properties: {
       id: { type: 'string '},
-      user_id: { type: 'string', indexed: true },
+      userId: { type: 'string', indexed: true },
       title: { type: 'string' },
-      content: { type: 'string' }
+      body: { type: 'string' }
     }
   })
 };
