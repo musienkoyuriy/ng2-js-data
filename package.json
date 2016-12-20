@@ -1,56 +1,48 @@
 {
-  "name": "ng2-js-data",
-  "version": "1.0.0",
-  "description": "An abstraction over the js-data library for angular 2 applications",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ngm build -p src",
-    "start": "ng serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/musienkoyuriy/ng2-js-data.git"
-  },
-  "keywords": [
-    "angular2",
-    "ng2",
-    "js-data",
-    "observables",
-    "rx",
-    "mapper",
-    "schema"
-  ],
-  "author": "Yuriy Musienko",
+  "name": "js-data",
+  "version": "0.0.0",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/musienkoyuriy/ng2-js-data/issues"
+  "angular-cli": {},
+  "scripts": {
+    "start": "ng serve",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor"
   },
-  "homepage": "https://github.com/musienkoyuriy/ng2-js-data#readme",
-  "devDependencies": {
-    "@angular/common": "~2.1.2",
-    "@angular/compiler": "~2.1.2",
-    "@angular/core": "~2.1.2",
-    "@angular/forms": "~2.1.2",
-    "@angular/http": "~2.1.2",
-    "@angular/platform-browser": "~2.1.2",
-    "@angular/platform-browser-dynamic": "~2.1.2",
-    "@angular/router": "~3.1.2",
-    "@ngstarter/systemjs-extension": "1.0.0-rc.4",
-    "@types/core-js": "^0.9.34",
-    "@types/jasmine": "^2.5.36",
-    "angular-cli": "1.0.0-beta.22-1",
-    "core-js": "2.4.1",
-    "rxjs": "5.0.0-beta.12",
-    "systemjs-builder": "0.15.34",
-    "ts-helpers": "1.1.2",
-    "typescript": "2.0.10",
-    "@types/webpack": "2.0.0"
-  },
+  "private": true,
   "dependencies": {
+    "@angular/common": "~2.1.0",
+    "@angular/compiler": "~2.1.0",
+    "@angular/core": "~2.1.0",
+    "@angular/forms": "~2.1.0",
+    "@angular/http": "~2.1.0",
+    "@angular/platform-browser": "~2.1.0",
+    "@angular/platform-browser-dynamic": "~2.1.0",
+    "@angular/router": "~3.1.0",
+    "core-js": "^2.4.1",
     "js-data": "rc",
     "js-data-http": "rc",
-    "ngm-cli": "0.3.7",
-    "zone.js": "^0.7.2"
+    "rxjs": "5.0.0-beta.12",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.6.23"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.2.30",
+    "@types/node": "^6.0.42",
+    "angular-cli": "1.0.0-beta.19-3",
+    "codelyzer": "1.0.0-beta.1",
+    "jasmine-core": "2.4.1",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-remap-istanbul": "^0.2.1",
+    "protractor": "4.0.9",
+    "ts-node": "1.2.1",
+    "tslint": "3.13.0",
+    "typescript": "~2.0.3",
+    "webdriver-manager": "10.2.5"
   }
 }

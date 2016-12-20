@@ -4,9 +4,9 @@ import { IPost } from '../store';
 @Component({
     selector: 'post',
     template: `
-      <div class="post">
-        <span>{{ post.title }}</span>
-        <div>{{ post.body }}</div>
+      <div class="post" style="margin-top: 15px; ">
+        <span><strong>{{ data.title }}</strong></span>
+        <div >{{ data.body }}</div>
       </div>
     `
 })

@@ -1,8 +1,9 @@
 import { DataStore, Record } from 'js-data';
 import { HttpAdapter } from 'js-data-http';
 import { postSchema } from './schemas';
+import { postRelations } from './relations';
 
-const ROOT = 'https://jsonplaceholder.typicode.com';
+export const ROOT = 'https://jsonplaceholder.typicode.com';
 
 export const adapter = new HttpAdapter({
   basePath: ROOT
@@ -21,5 +22,6 @@ export interface IPost extends Record {
 
 store.defineMapper('post', {
   endpoint: 'posts',
-  schema: postSchema
+  schema: postSchema,
+  // relations: postRelations
 });
