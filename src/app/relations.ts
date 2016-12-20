@@ -1,10 +1,4 @@
 export const postRelations = {
-  belongsTo: {
-    user: {
-      foreignKey: 'userId',
-      localField: 'user'
-    }
-  },
   hasMany: {
     comment: {
       foreignKey: 'postId',
@@ -15,10 +9,6 @@ export const postRelations = {
 
 export const commentRelations = {
   belongsTo: {
-    user: {
-      foreignKey: 'userIid',
-      localField: 'user'
-    },
     post: {
       foreignKey: 'postId',
       localField: 'post'

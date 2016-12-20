@@ -6,16 +6,16 @@ import * as api from '../api';
   selector: '#posts',
   template: `
     <div>
-        <div *ngIf="posts.length == 0">There are no posts yet</div>
-        <post *ngFor="let post of posts" [data]="post"></post>
+      <div *ngIf="posts.length == 0">There are no posts yet</div>
+      <post *ngFor="let post of posts" [data]="post"></post>
     </div>`
 })
 export class Posts {
-    public posts: IPost[] = [];
+  public posts: IPost[] = [];
 
-    public constructor() {
-        api.fetchPosts().then((posts) => {
-            this.posts = posts;
-        });
-    }
+  public constructor() {
+    api.fetchPosts().then((posts) => {
+      this.posts = posts;
+    });
+  }
 }

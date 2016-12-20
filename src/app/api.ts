@@ -24,6 +24,17 @@ export const getPost = (postId) => {
   });
 };
 
+export const fetchComments = (postId) => {
+  return store.findAll('comment', {
+    limit: 5,
+    where: {
+      postId: {
+        '==': postId
+      }
+    }
+  });
+};
+
 export const updatePost = (postId, newData) => store.update('post', postId, newData);
 
 export const deletePost = (postId) => store.destroy('post', postId);
