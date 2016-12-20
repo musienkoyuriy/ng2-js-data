@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ngm build -p src",
     "start": "ng serve"
   },
   "repository": {
@@ -27,16 +28,17 @@
   },
   "homepage": "https://github.com/musienkoyuriy/ng2-js-data#readme",
   "devDependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/compiler": "^2.0.0",
-    "@angular/compiler-cli": "^2.0.0",
-    "@angular/core": "^2.0.0",
-    "@angular/forms": "^2.0.0",
-    "@angular/platform-browser": "^2.0.0",
-    "@angular/platform-browser-dynamic": "^2.0.0",
-    "@angular/platform-server": "^2.0.0",
-    "@angular/router": "^3.0.0",
-    "@angular/tsc-wrapped": "0.4.0",
+    "@angular/common": "~2.1.2",
+    "@angular/compiler": "~2.1.2",
+    "@angular/core": "~2.1.2",
+    "@angular/forms": "~2.1.2",
+    "@angular/http": "~2.1.2",
+    "@angular/platform-browser": "~2.1.2",
+    "@angular/platform-browser-dynamic": "~2.1.2",
+    "@angular/router": "~3.1.2",
+    "@ngstarter/systemjs-extension": "1.0.0-rc.4",
+    "@types/core-js": "^0.9.34",
+    "@types/jasmine": "^2.5.36",
     "angular-cli": "1.0.0-beta.22-1",
     "core-js": "2.4.1",
     "rxjs": "5.0.0-beta.12",
@@ -48,6 +50,7 @@
   "dependencies": {
     "js-data": "rc",
     "js-data-http": "rc",
+    "ngm-cli": "0.3.7",
     "zone.js": "^0.7.2"
   }
 }

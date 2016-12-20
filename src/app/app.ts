@@ -5,7 +5,7 @@ import { createPost } from './api';
     selector: 'app',
     template: `
       <posts></posts>
-      <form (submit)="onSubmit">
+      <form (submit)="onSubmit()">
         <input type="text" name="title" [(ngModel)]="title" placeholder="Enter the title..."/> <br />
         <input type="text" name="body" [(ngModel)]="body" placeholder="Enter the body..."/> <br /> <br />
         <button type="submit">Send a post</button>
