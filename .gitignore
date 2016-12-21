@@ -1,5 +1,5 @@
 node_modules/
-
+dist/
 .idea/modules.xml
 .idea/ng2-js-data.iml
 .idea/typescript-compiler.xml

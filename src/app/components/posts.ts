@@ -14,8 +14,6 @@ export class Posts {
   public posts: IPost[] = [];
 
   public constructor() {
-    api.fetchPosts().then((posts) => {
-      this.posts = posts;
-    });
-  }
+    api.fetchPosts().then((posts) => this.posts = posts);
+}
 }

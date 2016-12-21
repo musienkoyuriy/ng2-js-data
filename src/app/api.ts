@@ -1,4 +1,6 @@
 import { store, ROOT } from './store';
+import { fromPromise } from 'rxjs/observable/fromPromise';
+import { utils } from 'js-data';
 
 export const createPost = (data) => {
   return store.getAdapter('http').HTTP({
@@ -36,6 +38,4 @@ export const fetchComments = (postId) => {
 };
 
 export const updatePost = (postId, newData) => store.update('post', postId, newData);
-
 export const deletePost = (postId) => store.destroy('post', postId);
-
