@@ -1,1 +1,1 @@
-An examples of using `js-data` in angular2 applications
+An examples of using `js-data` in Angular applications
